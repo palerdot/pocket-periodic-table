@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!--
+         Enable window content transitions
+         ref: https://developer.android.com/training/material/animations.html
+         -->
+        <!-- Specify theme for Action Bar -->
+        <item name="android:actionBarStyle">@style/SlickActionBar</item>
+        <!-- hide the action bar logo -->
+        <item name="android:logo">@android:color/transparent</item>
+    </style>
+
+    <style name="SlickActionBar" parent="AppTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:height">36dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <!-- Theme for Element Detail Activity -->
+    <style name="ElementDetailTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/ShowElementActionBar</item>
+    </style>
+
+    <style name="ShowElementActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#11ffffff</item>
+        <item name="android:height">50dp</item>
+    </style>
+
+    <!-- styles for Periodic table element boxes -->
+    <style name="element_box" parent="android:Widget.TextView">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,45 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- START: main table fonts -->
+
+    <!-- font size for element symbol  -->
+    <dimen name="main_table_element_symbol">12sp</dimen>
+    <!-- font size for atomic number -->
+    <dimen name="main_table_atomic_number">9sp</dimen>
+
+    <!-- END: main table fonts -->
+
+    <!-- START: elementInfo fonts -->
+    <!-- font size for element symbol  -->
+    <dimen name="element_info_element_symbol">30sp</dimen>
+    <!-- font size for atomic number -->
+    <dimen name="element_info_atomic_number">15sp</dimen>
+    <!-- font size for atomic weight -->
+    <dimen name="element_info_atomic_weight">12sp</dimen>
+    <!-- group period info -->
+    <dimen name="element_info_group_period_info">11sp</dimen>
+    <!-- electron distribution -->
+    <dimen name="element_info_electron_distribution">12sp</dimen>
+
+    <!-- END: elementInfo fonts -->
+
+    <!-- links font -->
+    <dimen name="element_info_links">8sp</dimen>
+    <!-- font size for headers -->
+    <dimen name="element_info_headers">15sp</dimen>
+
+    <!-- element info font size -->
+    <dimen name="element_info_property_name_size">9.5sp</dimen>
+    <dimen name="element_info_property_value_size">9.5sp</dimen>
+
+    <!-- legend text size -->
+    <dimen name="legend_text">8.5sp</dimen>
+
+    <!-- help text size -->
+    <dimen name="help_text_header">24sp</dimen>
+    <dimen name="help_text">15sp</dimen>
+
+</resources>

@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        PocketPeriodicTableKey {
+            keyAlias 'pocketperiodictable'
+            keyPassword 'pocketperiodictable00'
+            storeFile file('/home/arun/android-keys/PocketPeriodicTable.jks')
+            storePassword 'pocketperiodictable00'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion "20.0.0"
+    defaultConfig {
+        applicationId "in.palerdot.pocketperiodictable"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "0.1.0"
+        archivesBaseName = "PocketPeriodicTable-final-" + versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.PocketPeriodicTableKey
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.+'
+}

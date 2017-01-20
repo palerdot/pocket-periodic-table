@@ -1,0 +1,307 @@
+<!--
+The main activity is a Linear layout. It has a right and left pane which are again linear layouts.
+left => info_pane, right => detail => pane
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/elementDetailPane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    tools:context="in.palerdot.pocketperiodictable.ShowElementActivity">
+
+    <!-- Linear Layout; Left info pane -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:layout_marginRight="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/color_actinoids"
+                android:transitionName="@string/elementTransitionName"
+                android:id="@+id/info_window">
+
+                <!-- Atomic number in top right -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/info_atomic_number"
+                        android:textSize="@dimen/element_info_atomic_number"
+                        android:textStyle="bold"
+                        android:gravity="right"/>
+
+                </LinearLayout>
+
+                <!-- Symbol -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/element_symbol"
+                        android:textSize="@dimen/element_info_element_symbol"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <!-- Atomic Weight -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/info_atomic_weight"
+                        android:textSize="@dimen/element_info_atomic_weight"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <!-- Group period info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/info_group_period_block"
+                        android:textSize="@dimen/element_info_group_period_info"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <!-- electron distribution -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/info_electron_distribution"
+                        android:textSize="@dimen/element_info_electron_distribution"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:fadeScrollbars="false"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarFadeDuration="100"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/info_links"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+    <!-- Right info pane, should be scrollable -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarSize="1dp"
+        android:fadeScrollbars="true"
+        android:scrollbarDefaultDelayBeforeFade="50"
+        android:scrollbarFadeDuration="500">
+
+        <!-- The main linear layout holding all the info pane children -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- general info pane - linear layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- General Header -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General"
+                    android:textSize="@dimen/element_info_headers"
+                    android:textStyle="bold"
+                    android:id="@+id/general_header"
+                    android:gravity="center"
+                    android:background="#00ff00"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/general_properties">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- history info pane - linear layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- history Header -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:textSize="@dimen/element_info_headers"
+                    android:textStyle="bold"
+                    android:id="@+id/history_header"
+                    android:gravity="center"
+                    android:background="#00ff00"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/history_properties">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- physical properties info pane - linear layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- physical properties header Header -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Physical Properties"
+                    android:textSize="@dimen/element_info_headers"
+                    android:textStyle="bold"
+                    android:id="@+id/physical_properties_header"
+                    android:gravity="center"
+                    android:background="#00ff00"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/physical_properties">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- atomic properties info info pane - linear layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- atomic properties Header -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atomic Properties"
+                    android:textSize="@dimen/element_info_headers"
+                    android:textStyle="bold"
+                    android:id="@+id/atomic_properties_header"
+                    android:gravity="center"
+                    android:background="#00ff00"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/atomic_properties">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- miscellaneous properties info pane - linear layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- misc Header -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Miscellaneous"
+                    android:textSize="@dimen/element_info_headers"
+                    android:textStyle="bold"
+                    android:id="@+id/miscellaneous_header"
+                    android:gravity="center"
+                    android:background="#00ff00"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/miscellaneous_properties">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

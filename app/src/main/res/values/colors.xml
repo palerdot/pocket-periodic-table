@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- START: Element Color Codes Reference -->
+    <color name="color_alkali_metals">#FFD699</color>
+    <color name="color_alkaline_earth_metals">#66FFFF</color>
+    <color name="color_lanthanoids">#EB99FF</color>
+    <color name="color_actinoids">#FF99C2</color>
+    <color name="color_halogens">#fff68f</color>
+    <color name="color_post_transition_metals">#ffa07a</color>
+    <color name="color_metalloids">#63b8ff</color>
+    <color name="color_other_nonmetals">#00fa9a</color>
+    <color name="color_transition_metals">#ffe4c4</color>
+    <color name="color_noble_gases">#00ced1</color>
+    <!-- END: Element Color Codes Reference -->
+</resources>

@@ -1,0 +1,43 @@
+<resources>
+    <!-- main table fonts -->
+
+    <!-- START: Main Table fonts -->
+
+    <!-- font size for element symbol  -->
+    <dimen name="main_table_element_symbol">20sp</dimen>
+    <!-- font size for atomic number -->
+    <dimen name="main_table_atomic_number">13sp</dimen>
+
+    <!-- END: Main Table fonts -->
+
+    <!-- START: elementInfo fonts -->
+
+    <!-- font size for element symbol  -->
+    <dimen name="element_info_element_symbol">60sp</dimen>
+    <!-- font size for atomic number -->
+    <dimen name="element_info_atomic_number">30sp</dimen>
+    <!-- font size for atomic weight -->
+    <dimen name="element_info_atomic_weight">24sp</dimen>
+    <!-- group period info -->
+    <dimen name="element_info_group_period_info">22sp</dimen>
+    <!-- electron distribution -->
+    <dimen name="element_info_electron_distribution">24sp</dimen>
+    <!-- END: elementInfo fonts -->
+
+    <!-- links font -->
+    <dimen name="element_info_links">20sp</dimen>
+    <!-- font size for headers -->
+    <dimen name="element_info_headers">20sp</dimen>
+
+    <!-- element info font size -->
+    <dimen name="element_info_property_name_size">18sp</dimen>
+    <dimen name="element_info_property_value_size">18sp</dimen>
+
+    <!-- legend text size -->
+    <dimen name="legend_text">15sp</dimen>
+
+    <!-- help text size -->
+    <dimen name="help_text_header">35sp</dimen>
+    <dimen name="help_text">24sp</dimen>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pocket Periodic Table</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_show_element">Element Details</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Transition name to show smooth showing of element in showElement view -->
+    <string name="elementTransitionName">show Element Smooth</string>
+    <string name="about_carbon"><u>About Carbon</u></string>
+
+    <!-- START: Element Color Codes Reference -->
+    <string name="color_alkali_metals">#00ff00</string>
+    <string name="color_alkaline_earth_metals">#00ff00</string>
+    <string name="color_lanthanoids">#00ff00</string>
+    <string name="color_actinoids">#00ff00</string>
+    <string name="color_transition_metals">#00ff00</string>
+    <string name="color_post_transition_metals">#00ff00</string>
+    <string name="color_metalloids">#00ff00</string>
+    <string name="color_other_nonmetals">#00ff00</string>
+    <string name="color_halogens">#00ff00</string>
+    <string name="color_noble_gases">#00ff00</string>
+    <!-- END: Element Color Codes Reference -->
+
+
+
+
+    <string name="title_activity_help">Help &amp; Feedback</string>
+
+    <string name="action_help">Help &amp; Feedback</string>
+    <string name="action_periodic_table">Periodic Table</string>
+    <!-- help texts -->
+    <string name="help_text_1">
+        Touch an element in the Periodic Table to view more details about the element. In the periodic table view, top right is the
+        atomic number of the element.
+    </string>
+
+    <string name="help_text_2">
+        In the detailed information page, there are three main components: gist of element\'s information in the top left box,
+        important links about the element and its history in the bottom left box and the element\'s details in the right side.
+    </string>
+
+    <string name="help_text_3">
+        The top left box containing the gist of element\'s information shows element\'s atomic number in top right. Other details shown are: element\'s
+        symbol, atomic weight, element\'s group/period/block information and electron distribution.
+    </string>
+
+    <string name="help_text_4">
+        The box showing the links and the element\'s details are scrollable. You can scroll through them if it contains more contents than its
+        dimensions.
+    </string>
+
+    <string name="feedback_text">
+        Please provide your feedback like suggestions, improvements, bug/problems by giving a review in Google Play Store. All the features in
+        this app is free and will be free forever. Feel free to suggest features; we will do our best to add to the Pocket Periodic Table. If you
+        like Pocket Periodic Table, please rate the app in the Play Store.
+    </string>
+
+</resources>
